@@ -1,0 +1,24 @@
+
+/* 
+about us */
+
+    .container::before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      bottom: -30px;
+      left: -30px;
+      background: radial-gradient(circle, rgba(255, 223, 186, 0.2), transparent);
+      z-index: -1;
+      border-radius: 30px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #5a3e85;
+    }
+
+  
+    

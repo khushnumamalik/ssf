@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themes.pixelstrap.com/fastkart/front-end/index-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 May 2025 05:15:10 GMT -->
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fastkart">
+    <meta name="keywords" content="Fastkart">
+    <meta name="author" content="Fastkart">
+    <link rel="icon" href="../assets/images/favicon/5.png" type="image/x-icon">
+    <title>Second Sight Foundation</title>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"
+/>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+  rel="stylesheet"
+/>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap" rel="stylesheet">
+
+    <!-- bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
+
+    <!-- wow css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+
+    <!-- Plugin CSS file with desired skin css -->
+    <link rel="stylesheet" href="../assets/css/vendors/ion.rangeSlider.min.css">
+
+    <!-- animation css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/font-style.css">
+
+    <!-- Template css -->
+    <link id="color-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link id="color-link" rel="stylesheet" type="text/css" href="/fastkart/assets/css/header.css">
+<link rel="stylesheet" href="/fastkart/assets/css/cutom.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-header {
+    background-color: #f5f5f5;
+    font-size: 13px;
+    padding: 4px 0;
+  }
+
+  .top-header .right-icons i {
+    margin-left: 10px;
+    color: #000;
+  }
+
+  .main-navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .main-navbar .navbar-brand img {
+    height: 60px;
+  }
+
+  .search-box input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .header-icons i {
+    font-size: 20px;
+    color: #000;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+  .purple-nav {
+    background-color: #fdc134;
+    z-index: 1030;
+  }
+
+  .purple-nav .nav-link {
+    color: #000 !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .purple-nav .nav-link:hover {
+    background-color:#fdc134 ;
+  }
+  @media (max-width:768px) {
+    .search-box input{
+        width: 20vh !important;
+    }
+  }
+    /* Default (desktop) - keep everything as is */
+  .logo-img {
+    height: 60px;
+  }
+
+  .search-input {
+    width: 80vh;
+  }
+
+  .icon-set i {
+    color: #161394 !important;
+    font-size: 22px;
+  }
+
+  /* ✅ Mobile-specific changes */
+  @media (max-width: 767.98px) {
+    .logo-img {
+      height: 35px;
+    }
+
+    .search-input {
+      width: 100%;
+      max-width: 200px;
+      font-size: 14px;
+      padding: 5px 8px;
+    }
+
+    .icon-set i {
+      font-size: 16px;
+      margin-left: 10px !important;
+    }
+
+    .icon-set {
+      gap: 5px;
+    }
+
+    .main-navbar .container {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  }
+   @media (max-width: 991.98px) {
+    .navbar .form-control {
+      font-size: 14px;
+      padding: 6px 10px;
+    }
+
+    .navbar .fa-solid {
+      font-size: 16px;
+    }
+  }
+</style>
+ <body>
+    
+<div class="top-header">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <div class="text-muted" style="color: rgb(133, 131, 131) !important;">
+      Worldwide Fast & Safe Delivery | Oldest ISO 9001:2015 Certified Rudraksha Organization in the World | Your Trusted Brand Since 1997
+    </div>
+    <div class="right-icons d-flex align-items-center">
+    <a href="track.html" style="text-decoration: none;"> <i class="fa-solid fa-truck-fast me-1" style="color: #161394;"></i> <span class="me-3" style="color: #161394;">Track Orders</span></a> 
+      <!-- ✅ INR Dropdown Working -->
+      <div class="dropdown">
+        <button class="btn btn-sm bg-transparent border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://flagcdn.com/in.svg" alt="INR" width="20" class="mx-1" style="color: #161394;"> INR
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">INR</a></li>
+          <li><a class="dropdown-item" href="#">USD</a></li>
+          <li><a class="dropdown-item" href="#">EUR</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🟨 Main Navbar -->
+<nav class="main-navbar py-2 d-none d-lg-block">
+  <div class="container d-flex flex-wrap align-items-center justify-content-between">
+    
+    <!-- ✅ Logo -->
+    <a href="#" class="navbar-brand me-2">
+      <img src="assets/images/header2.png" alt="Logo" class="logo-img">
+    </a>
+
+    <!-- ✅ Search Input -->
+    <div class="search-box flex-grow-1 me-2">
+      <input type="text" class="form-control search-input" placeholder="Search products by name or product code">
+    </div>
+
+    <!-- ✅ Icons -->
+    <div class="header-icons d-flex align-items-center icon-set">
+      <i class="fa-solid fa-phone"></i>
+      <i class="fa-solid fa-heart ms-3"></i>
+      <i class="fa-solid fa-cart-shopping ms-3"></i>
+      <i class="fa-solid fa-user ms-3"></i>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- 🟪 Purple Nav Menu (Sticky on Scroll) -->
+<nav class="navbar navbar-expand-lg purple-nav sticky-top">
+  <div class="container">
+    <a href="#" class="navbar-brand d-lg-none">
+      <img src="assets/images/header2.png" alt="Logo" style="height: 40px;">
+    </a>
+
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <!-- All nav links as you already have -->
+        <li class="nav-item"><a class="nav-link" href="#">Home <i class="fa-solid fa-angle-down ms-1"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About <i class="fa-solid fa-angle-down ms-1"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Product <i class="fa-solid fa-angle-down ms-1"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog <i class="fa-solid fa-angle-down ms-1"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Crystal <i class="fa-solid fa-angle-down ms-1"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Course <i class="fa-solid fa-angle-down ms-1"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Coin <i class="fa-solid fa-angle-down ms-1"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Crystal Frame <i class="fa-solid fa-angle-down ms-1"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Mala <i class="fa-solid fa-angle-down ms-1"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pooja & Samagri <i class="fa-solid fa-angle-down ms-1"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Ring <i class="fa-solid fa-angle-down ms-1"></i></a></li>
+        <!-- ... other nav items ... -->
+        <li class="nav-item"><a class="nav-link" href="#">Salt <i class="fa-solid fa-angle-down ms-1"></i></a></li>
+      </ul>
+
+      <!-- ✅ Mobile View: Search & Icons at bottom -->
+      <div class="d-block d-lg-none mt-3">
+        <div class="mb-2">
+          <input type="text" class="form-control" placeholder="Search products by name or product code">
+        </div>
+        <div class="d-flex justify-content-center gap-3">
+          <i class="fa-solid fa-phone" style="color: #fff;"></i>
+          <i class="fa-solid fa-heart" style="color: #fff;"></i>
+          <i class="fa-solid fa-cart-shopping" style="color: #fff;"></i>
+          <i class="fa-solid fa-user" style="color: #fff;"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <!-- Home Section Start -->
+<section class="home-section-2 home-section-bg pt-0 overflow-hidden">
+  <div class="container-fluid p-0">
+    <div class="row">
+      <div class="col-12">
+       <div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+
+          <div class="carousel-inner">
+
+            <!-- 🖼️ Slide 1 -->
+            <div class="carousel-item active">
+              <div class="home-contain rounded-0 p-0">
+                <img src="/assets/images/hero-banner1.jpg" class="img-fluid bg-img lazyload" alt="">
+                <div class="home-detail home-big-space p-center-left home-overlay position-relative">
+                  <div class="container-fluid-lg">
+                    <div>
+                      <h6 class="ls-expanded text-uppercase" style="color: #e97d1f !important;">Experience the Power of</h6>
+                      <h1 class="heding-2 text-light">Natural Stones</h1>
+                      <h5 class="text-content text-light fw-bold">
+                        Discover our collection of high-quality stones, each <br>
+                        carefully selected to enhance your energy and well-<br>
+                        being. Unlock the secrets of ancient wisdom and <br>
+                        elevate your spiritual journey.
+                      </h5>
+                      <button class="btn theme-bg-color btn-md text-white fw-bold mt-md-4 mt-2 mend-auto"
+                        onclick="location.href = 'shop-left-sidebar.html';">
+                        Shop Now <i style="margin-left: 5px;" class="ri-store-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 🖼️ Slide 2 -->
+      
+
+            <!-- 🖼️ Slide 3 -->
+            <div class="carousel-item">
+              <div class="home-contain rounded-0 p-0">
+                <img src="https://t4.ftcdn.net/jpg/10/25/79/79/360_F_1025797925_AohOK6P68Fzd5QodB8LCUW6yAyaxNxdg.jpg" class="img-fluid bg-img lazyload" alt="">
+                <div class="home-detail home-big-space p-center-left home-overlay position-relative">
+                  <div class="container-fluid-lg">
+                    <div>
+                      <h6 class="ls-expanded text-uppercase" style="color: #e97d1f !important;">Elevate Your Spirit</h6>
+                      <h1 class="heding-2 text-light">Divine Collections</h1>
+                      <h5 class="text-content text-light fw-bold">
+                        Explore timeless treasures inspired by ancient <br>
+                        traditions. Empower your space with healing <br>
+                        vibrations and divine blessings.
+                      </h5>
+                      <button class="btn theme-bg-color btn-md text-white fw-bold mt-md-4 mt-2 mend-auto"
+                        onclick="location.href = 'shop-left-sidebar.html';">
+                        Shop Now <i style="margin-left: 5px;" class="ri-store-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Optional: Carousel Controls (if you want manual control) -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Our Products -->
+<div class="container py-5">
+  <div class="row g-4">
+
+    <!-- Product Card Example -->
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card position-relative">
+        <span class="ribbon " style="background-color: rgb(214, 242, 253);">Attracts Success</span>
+        <img src="/assets/images/braclet1.webp"
+          class="img-fluid" alt="Product">
+        <div class="p-3">
+          <h6 class="mb-1 fw-semibold">Dhan yog Bracelet</h6>
+          <div class="text-warning small">★★★★★ <span class="text-muted">1311 reviews</span></div>
+          <div class="fw-bold fs-5">₹599 <span
+              class="text-muted text-decoration-line-through fs-6">₹1,099</span></div>
+
+          <!-- Quantity + Add to Box -->
+          <div class="d-flex align-items-center gap-2 mt-2">
+
+        <button class="btn btn-dark flex-fill add-to-box-btn" style="background-color: #161394; border-radius: 25px;">
+              Add to Box
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card position-relative">
+        <span class="ribbon " style="background-color: rgb(248, 187, 187);">Attracts Success</span>
+        <img src="/assets/images/braclet2.webp"
+          class="img-fluid" alt="Product">
+        <div class="p-3">
+          <h6 class="mb-1 fw-semibold">Dhan yog Bracelet</h6>
+          <div class="text-warning small">★★★★★ <span class="text-muted">1311 reviews</span></div>
+          <div class="fw-bold fs-5">₹599 <span
+              class="text-muted text-decoration-line-through fs-6">₹1,099</span></div>
+
+          <!-- Quantity + Add to Box -->
+          <div class="d-flex align-items-center gap-2 mt-2">
+
+            <button class="btn btn-dark flex-fill add-to-box-btn" style="background-color: #161394; border-radius: 25px;">
+              Add to Box
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card position-relative">
+        <span class="ribbon " style="background-color: rgb(250, 209, 209);">Attracts Success</span>
+        <img src="/assets/images/braclet3.webp"
+          class="img-fluid" alt="Product">
+        <div class="p-3">
+          <h6 class="mb-1 fw-semibold">Dhan yog Bracelet</h6>
+          <div class="text-warning small">★★★★★ <span class="text-muted">1311 reviews</span></div>
+          <div class="fw-bold fs-5">₹599 <span
+              class="text-muted text-decoration-line-through fs-6">₹1,099</span></div>
+
+          <!-- Quantity + Add to Box -->
+          <div class="d-flex align-items-center gap-2 mt-2">
+<button class="btn btn-dark flex-fill add-to-box-btn" style="background-color: #161394; border-radius: 25px;">
+              Add to Box
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card position-relative">
+        <span class="ribbon " style="background-color: rgb(240, 240, 157);">Attracts Success</span>
+        <img src="/assets/images/braclet4.webp"
+          class="img-fluid" alt="Product">
+        <div class="p-3">
+          <h6 class="mb-1 fw-semibold">Dhan yog Bracelet</h6>
+          <div class="text-warning small">★★★★★ <span class="text-muted">1311 reviews</span></div>
+          <div class="fw-bold fs-5">₹599 <span
+              class="text-muted text-decoration-line-through fs-6">₹1,099</span></div>
+
+          <!-- Quantity + Add to Box -->
+          <div class="d-flex align-items-center gap-2 mt-2">
+<button class="btn btn-dark flex-fill add-to-box-btn" style="background-color: #161394; border-radius: 25px;">
+              Add to Box
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card position-relative">
+        <span class="ribbon " style="background-color: rgb(253, 216, 253);">Attracts Success</span>
+        <img src="/assets/images/braclete-1.webp"
+          class="img-fluid" alt="Product">
+        <div class="p-3">
+          <h6 class="mb-1 fw-semibold">Dhan yog Bracelet</h6>
+          <div class="text-warning small">★★★★★ <span class="text-muted">1311 reviews</span></div>
+          <div class="fw-bold fs-5">₹599 <span
+              class="text-muted text-decoration-line-through fs-6">₹1,099</span></div>
+
+          <!-- Quantity + Add to Box -->
+          <div class="d-flex align-items-center gap-2 mt-2">
+<button class="btn btn-dark flex-fill add-to-box-btn" style="background-color: #161394; border-radius: 25px;">
+              Add to Box
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card position-relative">
+        <span class="ribbon " style="background-color: rgb(247, 204, 189);">Attracts Success</span>
+        <img src="/assets/images/braclete-2.webp"
+          class="img-fluid" alt="Product">
+        <div class="p-3">
+          <h6 class="mb-1 fw-semibold">Dhan yog Bracelet</h6>
+          <div class="text-warning small">★★★★★ <span class="text-muted">1311 reviews</span></div>
+          <div class="fw-bold fs-5">₹599 <span
+              class="text-muted text-decoration-line-through fs-6">₹1,099</span></div>
+
+          <!-- Quantity + Add to Box -->
+          <div class="d-flex align-items-center gap-2 mt-2">
+<button class="btn btn-dark flex-fill add-to-box-btn" style="background-color: #161394; border-radius: 25px;">
+              Add to Box
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card position-relative">
+        <span class="ribbon " style="background-color: rgb(181, 243, 181);">Attracts Success</span>
+        <img src="/assets/images/braclete-5.webp"
+          class="img-fluid" alt="Product">
+        <div class="p-3">
+          <h6 class="mb-1 fw-semibold">Dhan yog Bracelet</h6>
+          <div class="text-warning small">★★★★★ <span class="text-muted">1311 reviews</span></div>
+          <div class="fw-bold fs-5">₹599 <span
+              class="text-muted text-decoration-line-through fs-6">₹1,099</span></div>
+
+          <!-- Quantity + Add to Box -->
+          <div class="d-flex align-items-center gap-2 mt-2">
+<button class="btn btn-dark flex-fill add-to-box-btn" style="background-color: #161394; border-radius: 25px;">
+              Add to Box
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card position-relative">
+        <span class="ribbon " style="background-color: rgb(243, 211, 216);">Attracts Success</span>
+        <img src="https://astrotalk.store/cdn/shop/files/pocniilwg0vmczec4bgl_400x400_crop_center.webp?v=1750940044"
+          class="img-fluid" alt="Product">
+        <div class="p-3">
+          <h6 class="mb-1 fw-semibold">Dhan yog Bracelet</h6>
+          <div class="text-warning small">★★★★★ <span class="text-muted">1311 reviews</span></div>
+          <div class="fw-bold fs-5">₹599 <span
+              class="text-muted text-decoration-line-through fs-6">₹1,099</span></div>
+
+          <!-- Quantity + Add to Box -->
+          <div class="d-flex align-items-center gap-2 mt-2">
+<button class="btn btn-dark flex-fill add-to-box-btn" style="background-color: #161394; border-radius: 25px;">
+              Add to Box
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat the above block for more cards... -->
+    <!-- You can copy-paste the entire card and change title, image, etc. -->
+
+  </div>
+</div>
+
+<!-- JavaScript for Quantity Buttons -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const allCards = document.querySelectorAll(".product-card");
+
+    allCards.forEach(card => {
+      let count = 1;
+      const minusBtn = card.querySelector(".minus-btn");
+      const plusBtn = card.querySelector(".plus-btn");
+      const countSpan = card.querySelector(".box-count");
+
+      minusBtn.addEventListener("click", () => {
+        if (count > 0) {
+          count--;
+          countSpan.textContent = count;
+        }
+      });
+
+      plusBtn.addEventListener("click", () => {
+        count++;
+        countSpan.textContent = count;
+      });
+    });
+  });
+</script>
+
+
+
+   <!-- Banner Section Start -->
+<section class="banner-section py-3 container-fluid">
+  <div class="container-fluid p-0">
+    <div class="position-relative text-center w-100">
+      
+      <!-- ✅ Full Width Image, No Cropping -->
+      <img src="https://www.rudraksha-ratna.com/assets/Consultation/consult-with-sakhashree/how-gems-works.jpg"
+           class="img-fluid w-100 d-block"
+     style="height: auto; max-height: 400px; object-fit: cover; opacity: 0.5;"
+     alt="Banner Image">
+
+      <!-- ✅ Centered Text Over Banner -->
+      <div class="position-absolute top-50 start-50 translate-middle text-light">
+        <h5 class="fw-light mb-2" style="color: #161394; font-weight: bold !important;">Biggest Spiritual Sale of the Season!</h5>
+        <h4 class="fw-bold mb-0" style="color: #e97d1f; font-size: 50px; font-weight: bold;">Up to 50% OFF on Crystals, Healing Kits & More</h4>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Banner Section End -->
+
+
+
+
+
+   
+<!-- our products -->
+<div class="container py-5">
+    <div class="row g-4">
+
+    <!-- Product Card Example -->
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card position-relative">
+        <span class="ribbon " style="background-color: rgb(214, 242, 253);">Attracts Success</span>
+        <img src="/assets/images/braclet1.webp"
+          class="img-fluid" alt="Product">
+        <div class="p-3">
+          <h6 class="mb-1 fw-semibold">Dhan yog Bracelet</h6>
+          <div class="text-warning small">★★★★★ <span class="text-muted">1311 reviews</span></div>
+          <div class="fw-bold fs-5">₹599 <span
+              class="text-muted text-decoration-line-through fs-6">₹1,099</span></div>
+
+          <!-- Quantity + Add to Box -->
+          <div class="d-flex align-items-center gap-2 mt-2">
+
+        <button class="btn btn-dark flex-fill add-to-box-btn" style="background-color: #161394; border-radius: 25px;">
+              Add to Box
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card position-relative">
+        <span class="ribbon " style="background-color: rgb(248, 187, 187);">Attracts Success</span>
+        <img src="/assets/images/braclet2.webp"
+          class="img-fluid" alt="Product">
+        <div class="p-3">
+          <h6 class="mb-1 fw-semibold">Dhan yog Bracelet</h6>
+          <div class="text-warning small">★★★★★ <span class="text-muted">1311 reviews</span></div>
+          <div class="fw-bold fs-5">₹599 <span
+              class="text-muted text-decoration-line-through fs-6">₹1,099</span></div>
+
+          <!-- Quantity + Add to Box -->
+          <div class="d-flex align-items-center gap-2 mt-2">
+
+            <button class="btn btn-dark flex-fill add-to-box-btn" style="background-color: #161394; border-radius: 25px;">
+              Add to Box
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card position-relative">
+        <span class="ribbon " style="background-color: rgb(250, 209, 209);">Attracts Success</span>
+        <img src="/assets/images/braclet3.webp"
+          class="img-fluid" alt="Product">
+        <div class="p-3">
+          <h6 class="mb-1 fw-semibold">Dhan yog Bracelet</h6>
+          <div class="text-warning small">★★★★★ <span class="text-muted">1311 reviews</span></div>
+          <div class="fw-bold fs-5">₹599 <span
+              class="text-muted text-decoration-line-through fs-6">₹1,099</span></div>
+
+          <!-- Quantity + Add to Box -->
+          <div class="d-flex align-items-center gap-2 mt-2">
+<button class="btn btn-dark flex-fill add-to-box-btn" style="background-color: #161394; border-radius: 25px;">
+              Add to Box
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card position-relative">
+        <span class="ribbon " style="background-color: rgb(240, 240, 157);">Attracts Success</span>
+        <img src="/assets/images/braclet4.webp"
+          class="img-fluid" alt="Product">
+        <div class="p-3">
+          <h6 class="mb-1 fw-semibold">Dhan yog Bracelet</h6>
+          <div class="text-warning small">★★★★★ <span class="text-muted">1311 reviews</span></div>
+          <div class="fw-bold fs-5">₹599 <span
+              class="text-muted text-decoration-line-through fs-6">₹1,099</span></div>
+
+          <!-- Quantity + Add to Box -->
+          <div class="d-flex align-items-center gap-2 mt-2">
+<button class="btn btn-dark flex-fill add-to-box-btn" style="background-color: #161394; border-radius: 25px;">
+              Add to Box
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card position-relative">
+        <span class="ribbon " style="background-color: rgb(253, 216, 253);">Attracts Success</span>
+        <img src="/assets/images/braclete-1.webp"
+          class="img-fluid" alt="Product">
+        <div class="p-3">
+          <h6 class="mb-1 fw-semibold">Dhan yog Bracelet</h6>
+          <div class="text-warning small">★★★★★ <span class="text-muted">1311 reviews</span></div>
+          <div class="fw-bold fs-5">₹599 <span
+              class="text-muted text-decoration-line-through fs-6">₹1,099</span></div>
+
+          <!-- Quantity + Add to Box -->
+          <div class="d-flex align-items-center gap-2 mt-2">
+<button class="btn btn-dark flex-fill add-to-box-btn" style="background-color: #161394; border-radius: 25px;">
+              Add to Box
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card position-relative">
+        <span class="ribbon " style="background-color: rgb(247, 204, 189);">Attracts Success</span>
+        <img src="/assets/images/braclete-2.webp"
+          class="img-fluid" alt="Product">
+        <div class="p-3">
+          <h6 class="mb-1 fw-semibold">Dhan yog Bracelet</h6>
+          <div class="text-warning small">★★★★★ <span class="text-muted">1311 reviews</span></div>
+          <div class="fw-bold fs-5">₹599 <span
+              class="text-muted text-decoration-line-through fs-6">₹1,099</span></div>
+
+          <!-- Quantity + Add to Box -->
+          <div class="d-flex align-items-center gap-2 mt-2">
+<button class="btn btn-dark flex-fill add-to-box-btn" style="background-color: #161394; border-radius: 25px;">
+              Add to Box
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card position-relative">
+        <span class="ribbon " style="background-color: rgb(181, 243, 181);">Attracts Success</span>
+        <img src="/assets/images/braclete-5.webp"
+          class="img-fluid" alt="Product">
+        <div class="p-3">
+          <h6 class="mb-1 fw-semibold">Dhan yog Bracelet</h6>
+          <div class="text-warning small">★★★★★ <span class="text-muted">1311 reviews</span></div>
+          <div class="fw-bold fs-5">₹599 <span
+              class="text-muted text-decoration-line-through fs-6">₹1,099</span></div>
+
+          <!-- Quantity + Add to Box -->
+          <div class="d-flex align-items-center gap-2 mt-2">
+<button class="btn btn-dark flex-fill add-to-box-btn" style="background-color: #161394; border-radius: 25px;">
+              Add to Box
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card position-relative">
+        <span class="ribbon " style="background-color: rgb(243, 211, 216);">Attracts Success</span>
+        <img src="https://astrotalk.store/cdn/shop/files/pocniilwg0vmczec4bgl_400x400_crop_center.webp?v=1750940044"
+          class="img-fluid" alt="Product">
+        <div class="p-3">
+          <h6 class="mb-1 fw-semibold">Dhan yog Bracelet</h6>
+          <div class="text-warning small">★★★★★ <span class="text-muted">1311 reviews</span></div>
+          <div class="fw-bold fs-5">₹599 <span
+              class="text-muted text-decoration-line-through fs-6">₹1,099</span></div>
+
+          <!-- Quantity + Add to Box -->
+          <div class="d-flex align-items-center gap-2 mt-2">
+<button class="btn btn-dark flex-fill add-to-box-btn" style="background-color: #161394; border-radius: 25px;">
+              Add to Box
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat the above block for more cards... -->
+    <!-- You can copy-paste the entire card and change title, image, etc. -->
+
+  </div>
+  </div>
+
+
+
+   
+   
+
+    <!-- Offer Section Start -->
+    <!-- <section class="offer-section">
+        <div class="container-fluid-lg">
+            <div class="row">
+                <div class="col-12">
+                    <div class="offer-box hover-effect">
+                        <h2><span>FREE GIFT ANY ORDER</span> 70% oFF</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Offer Section End -->
+
+   
+    <!-- Banner Section Start -->
+    <section class="banner-section">
+        <div class="container-fluid-lg">
+            <div class="row gy-lg-0 gy-3">
+                <div class="col-lg-6">
+                    <div class="banner-contain-3 hover-effect">
+                        <div>
+                            <img src="https://astrotalk.store/cdn/shop/files/c4cjdre8krxm6l2c0sq6.webp?v=1744573481&width=450" class="bg-img blur-up lazyload" alt="">
+                            <div
+                                class="banner-detail banner-detail-2 text-dark p-center-left w-75 banner-p-sm position-relative mend-auto">
+                                <div>
+                                     <h2 class="text-great fw-normal text-danger">Special offer</h2>
+                                <h3 class="mb-1 fw-bold">Citrine Dome Tree</h3>
+                                <h4 class="text-content">Rs 799</h4>
+                                    <button class="btn btn-md theme-bg-color text-white mt-sm-3 mt-1 fw-bold mend-auto"
+                                        onclick="location.href = 'shop-left-sidebar.html';">Shop Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="banner-contain-3 hover-effect">
+                        <img src="https://astrotalk.store/cdn/shop/files/c4cjdre8krxm6l2c0sq6.webp?v=1744573481&width=450" class="bg-img blur-up lazyload" alt="">
+                        <div
+                            class="banner-detail banner-detail-2 text-dark p-center-left w-75 banner-p-sm position-relative mend-auto">
+                            <div>
+                                <h2 class="text-great fw-normal text-danger">Special offer</h2>
+                                <h3 class="mb-1 fw-bold">Citrine Dome Tree</h3>
+                                <h4 class="text-content">Rs 799</h4>
+                                <button class="btn btn-md theme-bg-color text-white mt-sm-3 mt-1 fw-bold mend-auto"
+                                    onclick="location.href = 'shop-left-sidebar.html';">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Section End -->
+
+    
+   
+    <!-- Blog Section Start -->
+    <section class="blog-section">
+        <div class="container-fluid-lg">
+            <div class="title title-4">
+                <h2>Blog</h2>
+            </div>
+
+            <div class="slider-3-blog arrow-slider slick-height">
+                <div>
+                    <div class=" blog-box ratio_45">
+                        <div class="blog-box-image">
+                            <a href="blog-detail.html">
+                                <img src="https://astrotalk.store/cdn/shop/articles/Your_paragraph_text_8_9e0c01bb-46cb-4891-8620-daf70119377a_720x480.jpg?v=1751031255" class="blur-up lazyload bg-img" alt="">
+                            </a>
+                        </div>
+
+                        <div class="blog-detail">
+                            <label>Conversion rate optimization</label>
+                            <a href="blog-detail.html" style="text-decoration: none;">
+                                <h4>Karungali Mala Uses: Benefits, Powers & the Deity It Is Associated With</h4>
+                            </a>
+                            <h5 class="text-content" style="color: red;">Anil Viradiya - MARCH 9, 2022</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="blog-box ratio_45">
+                        <div class="blog-box-image">
+                            <a href="blog-detail.html">
+                                <img src="https://astrotalk.store/cdn/shop/articles/11_Mukhi_Rudraksha_Benefits_and_Wearing_Rules_for_Maximum_Impact.jpg?v=1750940869&width=450" class="blur-up lazyload bg-img" alt="">
+                            </a>
+                        </div>
+
+                        <div class="blog-detail">
+                            <label>Email Marketing</label>
+                            <a href="blog-detail.html" style="text-decoration: none !important;">
+                                <h4>11 Mukhi Rudraksha Benefits and Wearing Rules for Maximum Impact</h4>
+                            </a>
+                            <h5 class="text-content" style="color: red;">Anil Viradiya - MARCH 9, 2022</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="blog-box ratio_45">
+                        <div class="blog-box-image">
+                            <a href="blog-detail.html">
+                                <img src="../assets/images/grocery/blog/3.jpg" class="blur-up lazyload bg-img" alt="">
+                            </a>
+                        </div>
+
+                        <div class="blog-detail">
+                            <label>Conversion rate optimization</label>
+                            <a href="blog-detail.html">
+                                <h3>Best selling bag online market place...</h3>
+                            </a>
+                            <h5 class="text-content">Anil Viradiya - MARCH 9, 2022</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="blog-box ratio_45">
+                        <div class="blog-box-image">
+                            <a href="blog-detail.html">
+                                <img src="../assets/images/grocery/blog/1.jpg" class="blur-up lazyload bg-img" alt="">
+                            </a>
+                        </div>
+
+                        <div class="blog-detail">
+                            <label>Conversion rate optimization</label>
+                            <a href="blog-detail.html">
+                                <h3>Best selling bag online market place...</h3>
+                            </a>
+                            <h5 class="text-content">Anil Viradiya - MARCH 9, 2022</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="blog-box ratio_45">
+                        <div class="blog-box-image">
+                            <a href="blog-detail.html">
+                                <img src="../assets/images/grocery/blog/3.jpg" class="blur-up lazyload bg-img" alt="">
+                            </a>
+                        </div>
+
+                        <div class="blog-detail">
+                            <label>Conversion rate optimization</label>
+                            <a href="blog-detail.html">
+                                <h3>Best selling bag online market place...</h3>
+                            </a>
+                            <h5 class="text-content">Anil Viradiya - MARCH 9, 2022</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+
+    <!-- Service Section Start -->
+<!-- <section class="service-section section-b-space">
+  <div class="container-fluid-lg">
+    <div class="title">
+      <h2>Why Choose Our Product</h2>
+    </div>
+    <div class="row g-3 row-cols-xxl-5 row-cols-lg-3 row-cols-md-2">
+      
+      <div>
+        <div class="service-contain-2 text-center">
+         
+          <div class="service-detail">
+             <i class="fas fa-shipping-fast fa-2x mb-3" style="color: #161394; font-size: 60px;"></i>
+            <h3>Shipping applicable</h3>
+            <h6 class="text-content">Why wait? Start exploring our collection now and have your favorites delivered to your doorstep with minimal shipping cost!</h6>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="service-contain-2 text-center">
+       
+          <div class="service-detail">
+               <i class="fas fa-truck-plane fa-2x mb-3" style="color: #161394; font-size: 60px;"></i>
+            <h3>Delivery</h3>
+            <h6 class="text-content">Crossing Oceans for Free – Worldwide Delivery at No Extra Cost!</h6>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="service-contain-2 text-center">
+       
+          <div class="service-detail">
+               <i class="fas fa-credit-card fa-2x mb-3 text-center" style="color: #161394; font-size: 60px;"></i>
+            <h3 class="text-center">Online Pay</h3>
+            <h6 class="text-content text-center">Online Payment Avaible</h6>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="service-contain-2 text-center">
+          
+          <div class="service-detail">
+            <i class="fas fa-leaf fa-2x mb-3" style="color: #161394; font-size: 60px;"></i>
+            <h3>100% Natural Ingridients</h3>
+            <h6 class="text-content">Totincidunt sed rutrum nec, imperdiet ac enim. Morbi faucibusd ac – lorem glavrida liquam erat volutpat glavrida lorem.</h6>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="service-contain-2 text-center">
+          
+          <div class="service-detail">
+            <i class="fas fa-lock fa-2x mb-3" style="color: #161394; font-size: 60px;"></i>
+            <h3>Secure Payment</h3>
+            <h6 class="text-content">We have encrypted connection with enhanced security so you can pay using your credit card without being subjected to online scams.</h6>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="service-contain-2 text-center">
+         
+          <div class="service-detail">
+             <i class="fas fa-vial fa-2x mb-3" style="color: #161394; font-size: 60px;"></i>
+            <h3>Lab Certification</h3>
+            <h6 class="text-content">All of the products that we have in our stock, are tested through certified labs so you don’t have to worry about the quality</h6>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section> -->
+<!-- Service Section End -->
+
+
+
+
+
+<!-- WHY CHOOSE US SECTION -->
+<section class="container my-5 p-4 shadow rounded bg-white"
+         >
+    
+<div class="d-flex justify-content-center">
+    <h4 class="btn text-white fw-bold " style="color: black !important; font-size: 20px;">
+      Why Choose Us
+    </h4>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
+    <div class="d-flex align-items-start">
+      <span class="bg-light text-white p-2 rounded" style="background-color:#d78ee3;">
+        <i class="bi bi-patch-check-fill"></i>
+      </span>
+      <div class="ms-3">
+        <strong>Credibility Since 1997</strong>
+      </div>
+    </div>
+    <div class="d-flex align-items-start">
+      <span class="bg-light text-white p-2 rounded" style="background-color:#d78ee3;">
+        <i class="bi bi-truck"></i>
+      </span>
+      <div class="ms-3">
+        <strong>Fastest Delivery</strong>
+      </div>
+    </div>
+    <div class="d-flex align-items-start">
+      <span class="bg-light text-white p-2 rounded" style="background-color:#d78ee3;">
+        <i class="bi bi-person-lines-fill"></i>
+      </span>
+      <div class="ms-3">
+        <strong>Expert Advise & Counselling</strong>
+      </div>
+    </div>
+    <div class="d-flex align-items-start">
+      <span class="bg-light text-white p-2 rounded" style="background-color:#d78ee3;">
+        <i class="bi bi-globe"></i>
+      </span>
+      <div class="ms-3">
+        <strong>Worldwide Distribution</strong>
+      </div>
+    </div>
+    <div class="d-flex align-items-start">
+      <span class="bg-light text-white p-2 rounded" style="background-color:#d78ee3;">
+        <i class="bi bi-lightning-fill"></i>
+      </span>
+      <div class="ms-3">
+        <strong>Vedic Pooja Energisation</strong>
+      </div>
+    </div>
+    <div class="d-flex align-items-start">
+      <span class="bg-light text-white p-2 rounded" style="background-color:#d78ee3;">
+        <i class="bi bi-chat-dots-fill"></i>
+      </span>
+      <div class="ms-3">
+        <strong>Over 100,000+ Testimonials</strong>
+      </div>
+    </div>
+  </div>
+  <!-- NEWSLETTER SUBSCRIPTION -->
+<section style="background-color: #fdc134;">
+  <div class="container py-5">
+    <h4 class="fw-bold mb-3">Join Our Newsletter</h4>
+    <form class="row g-3">
+      <div class="col-md-5">
+        <input type="text" class="form-control" placeholder="Enter your full name">
+      </div>
+      <div class="col-md-5">
+        <input type="email" class="form-control" placeholder="Enter your email">
+      </div>
+      <div class="col-md-2">
+        <button type="submit" class="btn btn-dark w-100">SUBSCRIBE</button>
+      </div>
+    </form>
+  </div>
+</section>
+</section>
+
+
+
+<!-- Bootstrap 5 Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+   
+
+<!-- Footer Section Start -->
+
+
+<footer class="pt-5 text-white" style="background-color: #000;">
+  <div class="container">
+    <div class="row text-start gy-4">
+      
+      <!-- Column 1: Logo and About -->
+      <div class="col-md-3 col-12">
+        <div class="d-flex align-items-center mb-3">
+          <img src="/assets/images/footerlogo.webp" alt="Logo" style="width: 100px; height: auto;">
+          <div class="ms-2">
+            <h6 class="fw-bold m-0" style="font-size: 18px;">Second Sight<br>Foundation</h6>
+          </div>
+        </div>
+        <p class="small mb-4" style="line-height: 1.7; font-size: 16px;">
+          Second Sight Foundation bridges ancient wisdom with modern science, exploring the mind and universe through a scientific lens.
+        </p>
+        <div class="d-flex gap-3">
+          <a href="#"><i class="bi bi-instagram text-white fs-5"></i></a>
+          <a href="#"><i class="bi bi-facebook text-white fs-5"></i></a>
+          <a href="#"><i class="bi bi-youtube text-white fs-5"></i></a>
+          <a href="#"><i class="bi bi-whatsapp text-white fs-5"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links (inline style) -->
+      <div class="col-md-3 col-6" >
+        <h6 class="fw-bold mb-2 mt-md-4 mt-1" style="font-size: 19px;">Quick Links</h6>
+        <div style="width: 50px; border-bottom: 1px solid #ffcc00; margin-bottom: 1.5rem;"></div>
+        <div class="small mb-2"><a href="#" class="text-white text-decoration-none"style="line-height: 1.7; font-size: 16px;">Home</a></div>
+        <div class="small mb-2"><a href="#" class="text-white text-decoration-none"style="line-height: 1.7; font-size: 16px;">About us</a></div>
+        <div class="small mb-2"><a href="#" class="text-white text-decoration-none"style="line-height: 1.7; font-size: 16px;">Testimonial</a></div>
+        <div class="small"><a href="#" class="text-white text-decoration-none"style="line-height: 1.7; font-size: 16px;">Contact us</a></div>
+      </div>
+
+      <!-- Column 3: Useful Links (inline style) -->
+      <div class="col-md-3 col-6">
+        <h6 class="fw-bold mb-2 mt-md-4 mt-1" style="font-size: 19px;">Useful links</h6>
+        <div style="width: 50px; border-bottom: 1px solid #ffcc00; margin-bottom: 1.5rem;"></div>
+        <div class="small mb-2"><a href="#" class="text-white text-decoration-none"style="line-height: 1.7; font-size: 16px;">Courses</a></div>
+        <div class="small mb-2"><a href="#" class="text-white text-decoration-none"style="line-height: 1.7; font-size: 16px;">Our Team</a></div>
+        <div class="small mb-2"><a href="#" class="text-white text-decoration-none"style="line-height: 1.7; font-size: 16px;">View Gallery</a></div>
+        <div class="small mb-2"><a href="#" class="text-white text-decoration-none"style="line-height: 1.7; font-size: 16px;">Blog</a></div>
+        <div class="small mb-2"><a href="#" class="text-white text-decoration-none"style="line-height: 1.7; font-size: 16px;">Terms & Conditions</a></div>
+        <div class="small mb-2"><a href="#" class="text-white text-decoration-none"style="line-height: 1.7; font-size: 16px;">Privacy Policy</a></div>
+        <div class="small"><a href="#" class="text-white text-decoration-none"style="line-height: 1.7; font-size: 16px;">Refund and Returns Policy</a></div>
+      </div>
+
+      <!-- Column 4: Find Us -->
+      <div class="col-md-3 col-12">
+        <h6 class="fw-bold mb-2 mt-md-4 mt-1" style="font-size: 19px;">Find Us</h6>
+        <div style="width: 50px; border-bottom: 1px solid #ffcc00; margin-bottom: 1.5rem;"></div>
+        <div class="small mb-3"style="line-height: 1.7; font-size: 16px;">
+          <i class="bi bi-person-fill me-2"></i>Contact Name: Jatin Sharma
+        </div>
+        <div class="small mb-3"style="line-height: 1.7; font-size: 16px;">
+          <i class="bi bi-geo-alt-fill me-2"></i>Metro Station Tagore Garden, AE-10, Ground Floor, Tagore Garden, Near Tagore Garden Metro Station Gate Number 1 Exit, New Delhi, Delhi 110027
+        </div>
+        <div class="small mb-3"style="line-height: 1.7; font-size: 16px;">
+          <i class="bi bi-envelope-fill me-2"></i>gurujimanishsharma@gmail.com
+        </div>
+        <div class="small"style="line-height: 1.7; font-size: 16px;">
+          <i class="bi bi-telephone-fill me-2"></i>+91 9716517463
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="text-center py-4 mt-4 small">
+      Copyright © Second Sight Foundation. All Right Reserved. Design & Developed By
+      <a href="#" class="text-warning text-decoration-none fw-semibold">AraWebTechnologies</a>.
+    </div>
+
+
+  </div>
+</footer>
+
+    <!-- Footer End -->
+
+    <!-- Quick View Modal Box Start -->
+    <div class="modal fade theme-modal view-modal" id="view" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header p-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-sm-4 g-2">
+                        <div class="col-lg-6">
+                            <div class="slider-image">
+                                <img src="../assets/images/product/category/1.jpg" class="img-fluid blur-up lazyload"
+                                    alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="right-sidebar-modal">
+                                <h4 class="title-name">Peanut Butter Bite Premium Butter Cookies 600 g</h4>
+                                <h4 class="price">$36.99</h4>
+                                <div class="product-rating">
+                                    <ul class="rating">
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star"></i>
+                                        </li>
+                                    </ul>
+                                    <span class="ms-2">8 Reviews</span>
+                                    <span class="ms-2 text-danger">6 sold in last 16 hours</span>
+                                </div>
+
+                                <div class="product-detail">
+                                    <h4>Product Details :</h4>
+                                    <p>Candy canes sugar plum tart cotton candy chupa chups sugar plum chocolate I love.
+                                        Caramels marshmallow icing dessert candy canes I love soufflé I love toffee.
+                                        Marshmallow pie sweet sweet roll sesame snaps tiramisu jelly bear claw. Bonbon
+                                        muffin I love carrot cake sugar plum dessert bonbon.</p>
+                                </div>
+
+                                <ul class="brand-list">
+                                    <li>
+                                        <div class="brand-box">
+                                            <h5>Brand Name:</h5>
+                                            <h6>Black Forest</h6>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="brand-box">
+                                            <h5>Product Code:</h5>
+                                            <h6>W0690034</h6>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="brand-box">
+                                            <h5>Product Type:</h5>
+                                            <h6>White Cream Cake</h6>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="select-size">
+                                    <h4>Cake Size :</h4>
+                                    <select class="form-select select-form-size">
+                                        <option selected>Select Size</option>
+                                        <option value="1.2">1/2 KG</option>
+                                        <option value="0">1 KG</option>
+                                        <option value="1.5">1/5 KG</option>
+                                        <option value="red">Red Roses</option>
+                                        <option value="pink">With Pink Roses</option>
+                                    </select>
+                                </div>
+
+                                <div class="modal-button">
+                                    <button onclick="location.href = 'cart.html';"
+                                        class="btn btn-md add-cart-button icon">Add
+                                        To Cart</button>
+                                    <button onclick="location.href = 'product-left.html';"
+                                        class="btn theme-bg-color view-button icon text-white fw-bold btn-md">
+                                        View More Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quick View Modal Box End -->
+
+   
+
+    <!-- Location Modal Start -->
+    <div class="modal location-modal fade theme-modal" id="locationModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Choose your Delivery Location</h5>
+                    <p class="mt-1 text-content">Enter your address and we will specify the offer for your area.</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="location-list">
+                        <div class="search-input">
+                            <input type="search" class="form-control" placeholder="Search Your Area">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                        <div class="disabled-box">
+                            <h6>Select a Location</h6>
+                        </div>
+
+                        <ul class="location-select custom-height">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Alabama</h6>
+                                    <span>Min: $130</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Arizona</h6>
+                                    <span>Min: $150</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>California</h6>
+                                    <span>Min: $110</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Colorado</h6>
+                                    <span>Min: $140</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Florida</h6>
+                                    <span>Min: $160</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Georgia</h6>
+                                    <span>Min: $120</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Kansas</h6>
+                                    <span>Min: $170</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Minnesota</h6>
+                                    <span>Min: $120</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>New York</h6>
+                                    <span>Min: $110</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Washington</h6>
+                                    <span>Min: $130</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Location Modal End -->
+
+    <!-- Tap to top and theme setting button start -->
+    <div class="theme-option">
+        <div class="back-to-top" style="color: #e97d1f; background-color: #161394;">
+            <a id="back-to-top" href="#" style="text-decoration: none;">
+                <i class="fas fa-chevron-up" style="color: #e97d1f; background-color: #161394;"></i>
+            </a>
+        </div>
+        <!-- <div class="whatsapp-btn" style="
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    border-radius: 50%;
+    z-index: 999;
+">
+  <a href="https://wa.me/919716517463" target="_blank">
+    <img src="/assets/images/whatsapp.png" alt="WhatsApp" style="width: 50px; height: 50px;">
+  </a>
+</div> -->
+
+    </div>
+    <!-- Tap to top and theme setting button end -->
+
+    <!-- Bg overlay Start -->
+    <div class="bg-overlay"></div>
+    <!-- Bg overlay End -->
+<script>
+  const myCarousel = document.querySelector('#homeCarousel');
+  const carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 3000,
+    ride: 'carousel'
+  });
+</script>
+
+    <!-- latest jquery-->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- jquery ui-->
+    <script src="../assets/js/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/bootstrap/bootstrap-notify.min.js"></script>
+    <script src="../assets/js/bootstrap/popper.min.js"></script>
+
+    <!-- feather icon js-->
+    <script src="../assets/js/feather/feather.min.js"></script>
+    <script src="../assets/js/feather/feather-icon.js"></script>
+
+    <!-- Lazyload Js -->
+    <script src="../assets/js/lazysizes.min.js"></script>
+
+    <!-- Slick js-->
+    <script src="../assets/js/slick/slick.js"></script>
+    <script src="../assets/js/slick/slick-animation.min.js"></script>
+    <script src="../assets/js/custom-slick-animated.js"></script>
+    <script src="../assets/js/slick/custom_slick.js"></script>
+
+    <!-- Range slider js -->
+    <script src="../assets/js/ion.rangeSlider.min.js"></script>
+
+    <!-- Auto Height Js -->
+    <script src="../assets/js/auto-height.js"></script>
+
+    <!-- Lazyload Js -->
+    <script src="../assets/js/lazysizes.min.js"></script>
+
+    <!-- Quantity js -->
+    <script src="../assets/js/quantity-2.js"></script>
+
+    <!-- Fly Cart Js -->
+    <script src="../assets/js/fly-cart.js"></script>
+
+    <!-- Timer Js -->
+    <script src="../assets/js/timer1.js"></script>
+    <script src="../assets/js/timer2.js"></script>
+
+    <!-- Copy clipboard Js -->
+    <script src="../assets/js/clipboard.min.js"></script>
+    <script src="../assets/js/copy-clipboard.js"></script>
+
+    <!-- WOW js -->
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/custom-wow.js"></script>
+
+    <!-- script js -->
+    <script src="../assets/js/script.js"></script>
+
+    <!-- theme setting js -->
+    <script src="../assets/js/theme-setting.js"></script>
+</body>
+
+
+<!-- Mirrored from themes.pixelstrap.com/fastkart/front-end/index-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 May 2025 05:15:53 GMT -->
+</html>
