@@ -1,5 +1,4 @@
-<!-- Bootstrap 5 Icons CDN -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 
    
 
@@ -526,5 +525,5 @@
 </body>
 
 
-<!-- Mirrored from themes.pixelstrap.com/fastkart/front-end/product-circle.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 May 2025 05:17:12 GMT -->
+
 </html>
